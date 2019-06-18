@@ -1,0 +1,186 @@
+marquee {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding:5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#branding {
+    background-color: #4c4c4c;
+    display:flex;
+    justify-content:space-between;
+}
+
+header li {
+    list-style: none;
+    display:inline;
+    padding:10px;
+    margin:5px;
+}
+
+header a {
+    color:#c7c7c7;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header img {
+    height:40px;
+    padding:8px 0px 8px 20px;
+}
+
+#about {
+    background-color: #f18d97;
+    background-image: url(images/floral.png);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+}
+
+
+#about h1 {
+    text-align: center;
+    font: 900 4em 'Josefin Sans', sans-serif;
+    padding:50px;
+    margin:0px;
+}
+
+#about p {
+    font: 600 1.4em 'Montserrat', sans-serif;
+    border-top:1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding:20px;
+    max-width:850px;
+}
+
+button {
+    background-color:black;
+    color:#f18d97;
+    font: 600 2em 'Montserrat', sans-serif;
+    border:none;
+    padding:20px 70px;
+}
+
+#services {
+    background-image: url(images/floral.png);
+    background-color:  #efece7;
+    padding:10px;
+    text-align:center;
+}
+
+#services h2 {
+    font: 600 2.5em 'Sofia', cursive;
+    text-align:center;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font: 400 1em 'Montserrat', sans-serif;
+}
+
+.box i {
+    font-size: 7em;
+}
+
+.box :hover i {
+    color:#df3041;
+}
+
+#portfolio {
+    background-color: #ddceb4;
+    background-image: url(images/floral.png);
+    padding:5px;
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+}
+
+#portfolio h1 {
+    font: 600 2.5em 'Sofia', cursive;
+    text-align: center;
+}
+
+#portfolio p {
+    font: 600 1.4em 'Montserrat', sans-serif;
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+    text-align:center;
+    padding:20px;
+    max-width:850px;
+}
+
+#portfolio img {
+    height:150px;
+    width:210px;
+    border-radius: 10px;
+}
+
+#contactus {
+    background-color:  #afc7c6;
+    background-image: url(images/floral.png);
+    padding:5px;
+    text-align:center;
+   
+}
+
+#contactus h1 {
+    font: 600 2.5em 'Sofia', cursive;
+    text-align: center;
+}
+
+#contactus i {
+    border:1px solid black;
+    border-radius:100%;
+    height:50px;
+    width:50px;
+    padding:15px;
+    font-size:50px;
+    color:#212121;
+    margin:5px;
+}
+
+#contactus i:hover {
+    background-color: #212121;
+    color: #ffdfa2;
+    cursor: pointer;
+}
+
+footer {
+    font: 600 1em 'Montserrat', sans-serif;
+    height:80px;
+    background-color: #212121;
+    color: white;
+    text-align: center;
+    padding:5px;
+}
+
+footer i:hover{
+    color: #ef3b4c;
+}
+@media screen and (max-width: 800px) {
+    body {
+        width: 100%;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    #services h2 {
+        font: 600 2.5em 'Sofia', cursive;
+        margin: 0px;
+    }
+    #services p {
+        font: 600 1em 'Montserrat', sans-serif;
+    }
+}
+@media screen and (max-width: 400px) {
+    body {
+        width: 100%;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+}
