@@ -1,3 +1,9 @@
+body {
+    width: 100%;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 marquee {
     background-color: red;
     color: white;
@@ -10,6 +16,11 @@ marquee {
     background-color: #4c4c4c;
     display:flex;
     justify-content:space-between;
+}
+
+header ul {
+    display:flex;
+    margin:0;
 }
 
 header li {
@@ -104,6 +115,7 @@ button {
 #portfolio h1 {
     font: 600 2.5em 'Sofia', cursive;
     text-align: center;
+    margin:0px;
 }
 
 #portfolio p {
@@ -111,14 +123,55 @@ button {
     border-top:1px solid black;
     border-bottom:1px solid black;
     text-align:center;
-    padding:20px;
+    padding:26px 0px;
     max-width:850px;
+}
+
+#portfolio figure {
+    position:relative;
 }
 
 #portfolio img {
     height:150px;
     width:210px;
     border-radius: 10px;
+}
+
+
+#projects {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    margin: 0em 11em;
+}
+
+#projects figcaption {
+    background-color: #191919d9;
+    width: 210px;
+    height: 150px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 0px;
+}
+
+#projects figure:hover figcaption {
+    display: block;
+}
+
+#projects h4 {
+    font: 600 1em 'Montserrat', sans-serif;
+    color: white;
+    padding-top: 10px;
+}
+
+#projects i {
+    border-radius: 100%;
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
+    border: 1px solid #ffffff;
 }
 
 #contactus {
@@ -169,18 +222,70 @@ footer i:hover{
         margin: 0px;
         box-sizing: border-box;
     }
+    #about h1 {
+        font: 900 3.6em 'Josefin Sans', sans-serif;
+        margin: 0px;
+        padding: 30px 10px;
+        text-align: center;
+    }
+    button {
+        font: 600 1.8em 'Montserrat', sans-serif;
+        padding: 13px 45px;
+    }
+    #about p {
+        font: 600 1.2em 'Montserrat', sans-serif;
+    }
     #services h2 {
         font: 600 2.5em 'Sofia', cursive;
-        margin: 0px;
     }
     #services p {
         font: 600 1em 'Montserrat', sans-serif;
     }
+    .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font: 400 1em 'Montserrat', sans-serif;
+    }
+    #portfolio figure {
+        position: relative;
+    }
+    #portfolio img {
+        width: 210px;
+        height: 150px;
+        border-radius: 10px;
+    }
+    #projects {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        margin: 0em 11em;
+    }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     body {
         width: 100%;
         margin: 0px;
         box-sizing: border-box;
+    }
+    #about h1 {
+        font: 900 3em 'Josefin Sans', sans-serif;
+        margin: 0px;
+        padding: 30px 10px;
+        text-align: center;
+    }
+    #branding ul li {
+        list-style: none;
+        padding: 7px 4px;
+        margin: 4px 3px;
+        font: 400 0.8em 'Montserrat', sans-serif;
+    }
+    #branding img {
+        height: 32px;
+        margin: 5px 5px;
+    }
+    #projects {
+        display: grid;
+        grid-template-columns: 300px;
+        margin: 0em 11em;
     }
 }
